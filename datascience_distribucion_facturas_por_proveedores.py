@@ -21,6 +21,7 @@ bar_chart = px.bar(df, x='Cantidad facturas', y='Proveedor', orientation='h', ti
 
 # Crear la aplicación Dash
 app = dash.Dash(__name__)
+server = app.server
 
 
 # Diseño de la aplicación
