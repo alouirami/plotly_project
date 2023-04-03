@@ -17,6 +17,7 @@ lectura_correcta_chart = px.bar(data_filtrada, y='Cantidad facturas', x='Proveed
 
 # Crear la aplicación Dash
 app = dash.Dash(__name__)
+server = app.server
 
 # Diseño de la aplicación
 app.layout = html.Div([
