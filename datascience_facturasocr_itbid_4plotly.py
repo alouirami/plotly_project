@@ -72,13 +72,15 @@ app = dash.Dash(__name__)
 
 # Diseño de la aplicación
 app.layout = html.Div([
+    html.A(html.Button("distribución facturas"), href="https://itbid-distribucion-facturas.onrender.com/"),
+    html.A(html.Button("ranking proveedores"), href="https://itbid-ranking-proveedores.onrender.com/"),
+    html.A(html.Button("lectura correcta"), href="https://itbid-lectura-correcta.onrender.com/"),
+    html.A(html.Button("lectura incorrecta"), href="https://itbid-lectura-incorrecta.onrender.com/"),
     html.A(html.Button("informe proveedors"), href="https://itbid-proveedores-informe.onrender.com/"),
     html.H1('INFORME FACTURAS', style={'textAlign': 'center'}),
     dcc.Graph(figure=pie_chart, id='pie-chart'),
     dcc.Graph(figure=bar_chart, id='bar-chart'),
     dcc.Graph(figure=tab_chart, id='tab-chart'),
-    dcc.Graph(figure=bar_chart2, id='bar-chart2'),
-    dcc.Graph(figure=ranking_chart, id='ranking-chart')
 ])
 
 # Ejecutar la aplicación
