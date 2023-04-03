@@ -17,7 +17,7 @@ lectura_incorrecta_chart = px.bar(data_filtrada_mal, y='Cantidad facturas', x='P
 lectura_incorrecta_chart.update_traces(marker_color='rgb(199, 0, 57)')
 # Crear la aplicación Dash
 app = dash.Dash(__name__)
-
+server = app.server
 # Diseño de la aplicación
 app.layout = html.Div([
     html.A(html.Button("informe facturas"), href="https://itbid-facturas-informe.onrender.com/"),
